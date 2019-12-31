@@ -16,15 +16,15 @@
 <meta property="og:site_name" content="Stilife&#39;s Blog">
 <meta property="og:description" content="环境安装在 windows 10 环境下使用 Intel C++ 2019 需要预先安装 Visual Studio 2019 (or 2015/2017);在使用 Intel C++ 2019 和 Visual Studio 2019 调用 MATLAB 内置函数时，需要安装 matlab 2019b (or other versions).">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/1.png">
+<meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/1.PNG">
 <meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/2.PNG">
 <meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/3.PNG">
-<meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/4.png">
-<meta property="og:updated_time" content="2019-12-31T16:08:40.872Z">
+<meta property="og:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/4.PNG">
+<meta property="og:updated_time" content="2019-12-31T16:09:44.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows10 环境中使用 Intel C++ 2019 编译 C 源代码（支持 Intel Openmp , 并调用 matlab 内置函数）">
 <meta name="twitter:description" content="环境安装在 windows 10 环境下使用 Intel C++ 2019 需要预先安装 Visual Studio 2019 (or 2015/2017);在使用 Intel C++ 2019 和 Visual Studio 2019 调用 MATLAB 内置函数时，需要安装 matlab 2019b (or other versions).">
-<meta name="twitter:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/1.png">
+<meta name="twitter:image" content="http://stilife.cn/2019/10/24/courses/HPA_ProjectB1_Environment/1.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Stilife&#39;s Blog" type="application/atom+xml">
   
@@ -188,11 +188,11 @@
 <h3 id="intel-c-2019安装"><a href="#intel-c-2019安装" class="headerlink" title="intel c++ 2019安装"></a>intel c++ 2019安装</h3><p>下载链接：<a href="https://software.intel.com/en-us/parallel-studio-xe/choose-download/student-windows" target="_blank" rel="noopener">Intel Parallel Studio XE for Windows 2019</a></p>
 <h3 id="matlab-2019安装"><a href="#matlab-2019安装" class="headerlink" title="matlab 2019安装"></a>matlab 2019安装</h3><p>下载链接：<a href="https://ww2.mathworks.cn/products/matlab.html" target="_blank" rel="noopener">Matlab 2019</a></p>
 <h2 id="配置vs-c-项目属性"><a href="#配置vs-c-项目属性" class="headerlink" title="配置vs c++项目属性"></a>配置vs c++项目属性</h2><p>进入 <code>项目 -&gt; 属性</code> 后， 一次配置相应属性即可.</p>
-<h3 id="支持-Intel-C-Compiler"><a href="#支持-Intel-C-Compiler" class="headerlink" title="支持 Intel C++ Compiler"></a>支持 Intel C++ Compiler</h3><p>进入 <code>General</code>后，将 <code>Platform Toolset</code> 选择为 <code>Intel C++ Compiler</code> 即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/1.png" alt="Intel C++ Compiler"></p>
+<h3 id="支持-Intel-C-Compiler"><a href="#支持-Intel-C-Compiler" class="headerlink" title="支持 Intel C++ Compiler"></a>支持 Intel C++ Compiler</h3><p>进入 <code>General</code>后，将 <code>Platform Toolset</code> 选择为 <code>Intel C++ Compiler</code> 即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/1.PNG" alt="Intel C++ Compiler"></p>
 <h3 id="支持-Intel-Openmp"><a href="#支持-Intel-Openmp" class="headerlink" title="支持 Intel Openmp"></a>支持 Intel Openmp</h3><p>进入 <code>C/C++ -&gt; Language [Intel C++]</code> 后， 将 <code>OpenMP Support</code> 选择为 <code>Generate Parallel Code(/Qopenmp)</code> 即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/2.PNG" alt="OpenMP Support"></p>
 <h3 id="支持调用-MATLAB-内置函数"><a href="#支持调用-MATLAB-内置函数" class="headerlink" title="支持调用 MATLAB 内置函数"></a>支持调用 MATLAB 内置函数</h3><ul>
 <li>进入 <code>VC++ 目录</code> 后， 在 <code>包含目录</code> 和 <code>库目录</code> 中添加 <code>..\extern\include</code> 和 <code>..、extern\lib\win64\microsoft</code> 即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/3.PNG" alt="目录"></li>
-<li>在编写调用 matlab 内置函数的代码时，在相应文件中添加相应库的调用代码即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/4.png" alt="库"></li>
+<li>在编写调用 matlab 内置函数的代码时，在相应文件中添加相应库的调用代码即可，如下图<br><img src="/2019/10/24/courses/HPA_ProjectB1_Environment/4.PNG" alt="库"></li>
 </ul>
 
       
